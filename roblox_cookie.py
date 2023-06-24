@@ -28,6 +28,3 @@ temp_dir = tempfile.gettempdir()
 cookie_file = os.path.join(temp_dir, "roblox_cookie.txt")
 with open(cookie_file, "w") as file:
     file.write(cookie_value)
-
-# Close the file
-files["file"].close()
